@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+html {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(134, 129, 129), rgb(162, 227, 233));
+    height: 100vh;
+}
+
+#cont {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 5vh;
+    padding: 10px;
+    border: 2px solid rgb(128, 128, 133);
+    background-color: rgb(155, 155, 155);
+}
+
+#cont h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#screen {
+    background-color: white;
+    border: 2px solid black;
+    margin: 2px;
+    height: 60px;
+    padding: 5px;
+    width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.2s background-color;
+}
+
+#screen:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+#scoreBoard {
+    border: black solid 2px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    position: relative;
+    top: 118px;
+}
+
+/* gameboard */
+
+#board {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.brick {
+    background-color: white;
+    border: 2px solid black;
+    margin: 2px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .brick {
+        height: 75px;
+        width: 75px;
+    }
+}
+
